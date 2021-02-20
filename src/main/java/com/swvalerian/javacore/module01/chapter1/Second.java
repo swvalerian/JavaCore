@@ -1,4 +1,4 @@
-package com.swvalerian.javacore.chapter1;
+package com.swvalerian.javacore.module01.chapter1;
 
 public class Second {
     public static void main(String[] args) {
