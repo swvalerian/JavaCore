@@ -1,0 +1,38 @@
+package com.swvalerian.javacore.module01.chapter18;
+
+import java.util.Map;
+import java.util.WeakHashMap;
+
+// этот пример я не понял. Ну потому что еще незнаком с потоками
+public class WeakHashMapDemo {
+    private static Map map;
+
+    public static void main(String[] args) {
+        map = new WeakHashMap<>();
+        map.put(new Integer(1), "Proselyte");
+
+        Runnable runner = new Runnable() {
+            @Override
+            public void run() {
+                while (map.containsKey(1)){
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    System.out.println("Thread is waiting...");
+                    System.gc();
+                }
+            }
+        };
+
+        Thread thread = new Thread(runner);
+        thread.start();
+        System.out.println("Application is waiting...");
+        try {
+            thread.join();
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
+    }
+}
