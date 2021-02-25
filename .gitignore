@@ -1,6 +1,8 @@
 #folder
 .idea/*
 out/*
+chapter1/*
+chapter2/*
 
 #class files
 *.class

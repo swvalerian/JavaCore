@@ -28,5 +28,13 @@ public class TreeSetExample {
 
         System.out.println("TreeSet content:");
         System.out.println(treeSet); // выведет элементы отсортированные по возрастанию!
+
+
+        Integer i = 0;
+        System.out.println("Хешкод нуля = " + i.hashCode());
+
+        System.out.println("Хешкод нуля типа char = " + "0".hashCode());
+
+
     }
 }
