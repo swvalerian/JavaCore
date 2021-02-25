@@ -21,9 +21,20 @@ public class List6AtPage591 {
         arrayDeque.push("d");
         arrayDeque.push("!");
 
+        System.out.println("Размер очереди = " + arrayDeque.size() + "\n");
+
         while (arrayDeque.peek() != null) {
-            System.out.print(arrayDeque.pop());
+
+            System.out.print(arrayDeque.pop()); // взяли первый элемент - он был добавлен последним. (генерирует исключение)
+
+            // System.out.print(arrayDeque.pollFirst()); // взяли первый элемент - он был добавлен последним. (возвращает null)
+            // System.out.print(arrayDeque.poll()); // они идентичны в данном случае!? (возвращает null)
+
+            // System.out.print(arrayDeque.pollLast()); // а вот так напечатает в порядке добавления элементов в очередь. Т.к. последний элемент в очереди - это тот, что пришел первым
         }
+
+        System.out.println("\nРазмер очереди = " + arrayDeque.size() + " увы, исчерпали!");
+
 
     }
 
