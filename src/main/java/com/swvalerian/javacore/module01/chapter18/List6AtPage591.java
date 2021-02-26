@@ -35,6 +35,12 @@ public class List6AtPage591 {
 
         System.out.println("\nРазмер очереди = " + arrayDeque.size() + " увы, исчерпали!");
 
+        arrayDeque.addFirst("one");
+        arrayDeque.addLast("two");
+        arrayDeque.addFirst("free");
+        arrayDeque.addLast("foor");
+
+        System.out.println(arrayDeque);
 
     }
 
