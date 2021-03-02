@@ -31,7 +31,7 @@ public class List19AtPage639vector {
             System.out.print("[ " + enumeratorIterator.nextElement() + " ]");
         }
 
-        if (vector.contains(9)) {
+        if (vector.contains(5)) {
             System.out.println("\nВ массив случайным образом пробрался элемент со значением = " + vector.lastElement());
         }
 
