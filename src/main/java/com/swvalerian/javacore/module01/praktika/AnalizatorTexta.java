@@ -30,27 +30,29 @@ public class AnalizatorTexta {
 
         for (int i = 0; i < aText.length; i++){
             switch (aText[i]) {
-                case "[" : aOfBrackets[0] = aOfBrackets[0] + 1;
+                case "[" : ++aOfBrackets[0];
                     break;
-                case "(" : aOfBrackets[1] = aOfBrackets[1] + 1;
+                case "(" : ++aOfBrackets[1];
                     break;
-                case "{" : aOfBrackets[2] = aOfBrackets[2] + 1;
+                case "{" : ++aOfBrackets[2];
                     break;
-                case "]" : aOfBrackets[3] = aOfBrackets[3] + 1;
+                case "]" : ++aOfBrackets[3];
                     break;
-                case ")" : aOfBrackets[4] = aOfBrackets[4] + 1;
+                case ")" : ++aOfBrackets[4];
                     break;
-                case "}" : aOfBrackets[5] = aOfBrackets[5] + 1;
+                case "}" : ++aOfBrackets[5];
                     break;
             }
         }
 
+        // отладочная информация - можно стереть
         System.out.println("\n[ = " + aOfBrackets[0] + "штук");
         System.out.println("( = " + aOfBrackets[1] + "штук");
         System.out.println("{ = " + aOfBrackets[2] + "штук");
         System.out.println("] = " + aOfBrackets[3] + "штук");
         System.out.println(") = " + aOfBrackets[4] + "штук");
         System.out.println("} = " + aOfBrackets[5] + "штук");
+        //
 
         if ((aOfBrackets[0] == aOfBrackets[3]) && (aOfBrackets[1] == aOfBrackets[4]) && (aOfBrackets[2] == aOfBrackets[5])) {
             System.out.println("Всё в порядке, все открытые скобки соотвествуют закрытым!");
