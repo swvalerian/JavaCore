@@ -9,38 +9,9 @@ package com.swvalerian.javacore.module01.praktika;
 
 import java.util.*;
 
-public class module1_2practice {
+public class Module1_2Practice {
     public static void main(String[] args) {
 
-
-
-        /*// пример для практического задания номер 1
-        List<Integer> collectOne = new ArrayList<>();
-        collectOne.add(6);
-        collectOne.add(4);
-        collectOne.add(6);
-        collectOne.add(1);
-        collectOne.add(8);
-        collectOne.add(100);
-        collectOne.add(-100);
-        collectOne.add(44);
-        System.out.println(collectOne);
-
-        List<Integer> collectTwo = new ArrayList<>();
-        collectTwo.add(3);
-        collectTwo.add(8);
-        collectTwo.add(76);
-        collectTwo.add(504);
-        collectTwo.add(100);
-        collectTwo.add(1);
-        System.out.println(collectTwo);
-
-        System.out.println(sortCommonElem(collectOne, collectTwo));
-
-        // пример для практического задания номер 2
-        String testText;
-        testText = new String("[(строк}а для {]примера) ну и по желанию эксперементируе(м)");
-        analBrackets(testText);*/
     }
 
     public static TreeSet sortCommonElem(List<Integer> list1, List<Integer> list2) {
