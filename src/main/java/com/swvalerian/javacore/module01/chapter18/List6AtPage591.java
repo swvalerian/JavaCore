@@ -25,8 +25,8 @@ public class List6AtPage591 {
 
         while (arrayDeque.peek() != null) {
 
-            System.out.print(arrayDeque.pop()); // взяли первый элемент - он был добавлен последним. (генерирует исключение)
-
+            // System.out.print(arrayDeque.pop()); // взяли первый элемент - он был добавлен последним. (генерирует исключение)
+            // System.out.println(arrayDeque.peek()); // будет бесконечный цикл, т.к. постоянно берем на просмотр первый элемент = ! его и печатает
             // System.out.print(arrayDeque.pollFirst()); // взяли первый элемент - он был добавлен последним. (возвращает null)
             // System.out.print(arrayDeque.poll()); // они идентичны в данном случае!? (возвращает null)
 
