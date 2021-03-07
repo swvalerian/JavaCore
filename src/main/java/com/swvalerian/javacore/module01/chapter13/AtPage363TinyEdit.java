@@ -10,19 +10,24 @@ public class AtPage363TinyEdit {
         BufferedReader breader = new BufferedReader(new InputStreamReader(System.in));
 
         String[] stringArray = new String[100];
-        System.out.println("Введите строки текста: (введите стоп для завершения)");
+        System.out.println("Введите строки текста: (введите stop для завершения)");
         for (int i=0; i < stringArray.length; i++) {
             stringArray[i] = breader.readLine(); // записываем строки в массив строк
-            if (stringArray[i].equalsIgnoreCase("стоп")) {
+            if (stringArray[i].equalsIgnoreCase("stop")) {
                 break;
             }
         }
 
-        for (int i=0; i < stringArray.length; i++) {
-            if (stringArray[i].equalsIgnoreCase("стоп")) {
-                break;
+
+        try {
+            for (int i=0; i < stringArray.length; i++) {
+                if (stringArray[i].equalsIgnoreCase("stop")) {
+                    break;
+                }
+                System.out.println("Содержимое вашего файла: " + stringArray[i]);
             }
-            System.out.println("Содержимое вашего файла: " + stringArray[i]);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }
