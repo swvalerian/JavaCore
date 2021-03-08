@@ -31,7 +31,6 @@ public class BlockLambdaAtPage446 {
             }
             return "Каша - " + result + " - Малаша!";
         };
-
         System.out.println(str.reverse(string));
     }
 }

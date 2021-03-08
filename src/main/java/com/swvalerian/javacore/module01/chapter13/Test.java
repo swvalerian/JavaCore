@@ -7,7 +7,9 @@ public class Test {
         int b;
         b = 'A';
         System.out.write(b);
+        assert b < 0;
         System.out.write(270);
+
         System.out.write('\n'); // без перевода строки - не выведется символ, почему!?
     }
 }

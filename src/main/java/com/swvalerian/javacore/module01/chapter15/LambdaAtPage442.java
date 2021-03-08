@@ -66,5 +66,9 @@ public class LambdaAtPage442 {
 
         System.out.println("результат умножения = " + summa.test(5,6));
 
+        summa = (a, b) -> (a+b); // изменили метод в АИ - теперь он работает по другому, т.о. создали новый экземпляр
+        System.out.println("А вот теперь сумма: " + summa.test(5,10));
+
+
     }
 }
