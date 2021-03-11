@@ -27,8 +27,8 @@ public class FileOutputStreamDemoAtPage733 {
 
         // создаю экзмепляры класса, причем, если таких файлов не существует - они создаются!
         try (FileOutputStream fout1 = new FileOutputStream(dirName + "file1.txt", true);
-                FileOutputStream fout2 = new FileOutputStream(dirName + "file2.txt", true);
-                FileOutputStream fout3 = new FileOutputStream(dirName + "file3.txt", true)) {
+             FileOutputStream fout2 = new FileOutputStream(dirName + "file2.txt", true);
+             FileOutputStream fout3 = new FileOutputStream(dirName + "file3.txt", true)) {
 
             fout1.write(b); // запись строки целиком
 

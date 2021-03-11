@@ -9,7 +9,7 @@ public class DataInputOutputDemoAtPage748 {
         File file = new File(pathname);
 
         try {
-            f = new FileOutputStream(file);
+            f = new FileOutputStream(file, true); // если не указать true - то файл будет создаваться заново!
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -32,7 +32,6 @@ public class DataInputOutputDemoAtPage748 {
             Double d = din.readDouble();
             boolean b = din.readBoolean();
             Integer i = din.readInt();
-
 
             System.out.println(d + " : " + b + " : " + i);
         } catch (FileNotFoundException fnf) {
