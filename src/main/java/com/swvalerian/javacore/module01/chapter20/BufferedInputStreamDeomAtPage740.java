@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class BufferedInputStreamDeomAtPage740 {
     public static void main(String[] args) {
-        String s = "Это знак авторскasоasгоas true as &asasasasaaasdfasdfasf; a &copydfdfh; ;- not, это уже не ра;спознается системой html как знак";
+        String s = "Это знак авторскasоasгоas true as &asasasasaaasdfasdfasf; a &co4pydfdfh; ;- not, это уже не ра;спознается системой html как знак";
         byte[] buf = s.getBytes(); // загнали строку в массив
 
         ByteArrayInputStream bAIS = new ByteArrayInputStream(buf); // создали поток ввода, с которым и будем работать

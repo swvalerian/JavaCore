@@ -26,7 +26,7 @@ public class FileInputStreamDemoAtPage732 {
 
             byte[] b = new byte[n]; //тут создаем массив, для последующего использования его в качестве буфера для чтения байтов
 
-            if ( file.read(b) != n ) {
+            if ( file.read(b) != n ) { // здесь прочитал n байт из файла сразу в массив
                 System.err.println("Невозможно прочитать " + n + " байтов");
             }
             System.out.print("\n" + new String(b, 0, n)); // тут магия, я еще не сталкивался с такой формой записи String

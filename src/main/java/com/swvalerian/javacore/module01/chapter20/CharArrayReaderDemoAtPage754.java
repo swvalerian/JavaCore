@@ -3,13 +3,15 @@ package com.swvalerian.javacore.module01.chapter20;
 import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.io.CharArrayReader;
 import java.io.IOException;
+import java.io.InputStream;
 
 public class CharArrayReaderDemoAtPage754 {
     public static void main(String[] args) {
         String str = "abcdefghklmnopkq";
         int length = str.length();
         char[] buf = new char[length];
-        str.getChars(0, length, buf, 0);
+        str.getChars(0, length, buf, 0); // buf = str.toCharArray(); // вот метод, быстрая замена
+
 
         try (CharArrayReader cr = new CharArrayReader(buf, 0, 4)) { // загоняем в буфер тока первые четыре символа
             System.out.println((char) cr.read()); // выведет один символ - первый
@@ -21,5 +23,6 @@ public class CharArrayReaderDemoAtPage754 {
         } catch (IOException ex)  {
             System.out.println("ошибка ввода-вывода");
         }
+
     }
 }
